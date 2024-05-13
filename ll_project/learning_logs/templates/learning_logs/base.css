@@ -1,0 +1,35 @@
+
+  /* Custom navbar styles */
+  .navbar {
+    background-color: #ebebeb; /* Set background color */
+    border: 1px solid #dee2e6; /* Set border color */
+    border-radius: 5px; /* Add border radius */
+  }
+
+  .navbar-brand {
+    color: #343a40; /* Set brand text color */
+    font-weight: bold; /* Set brand font weight */
+  }
+
+  .navbar-toggler {
+    border-color: #343a40; /* Set toggler border color */
+  }
+
+  .navbar-nav .nav-link {
+    color: #343a40; /* Set nav link text color */
+  }
+
+  .navbar-text {
+    color: #6c757d; /* Set navbar text color */
+  }
+
+  .btn-outline-secondary {
+    color: #6c757d; /* Set button text color */
+    border-color: #6c757d; /* Set button border color */
+  }
+
+  .btn-outline-secondary:hover {
+    color: #343a40; /* Set button text color on hover */
+    border-color: #343a40; /* Set button border color on hover */
+  }
+

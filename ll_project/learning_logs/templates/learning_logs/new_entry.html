@@ -1,0 +1,22 @@
+{% extends "learning_logs/base.html" %}
+
+{% block page_header %}
+    <a href="{% url 'learning_logs:topic' topic.id %}" style="text-decoration: none;"><h1>{{topic}}</h1></a>
+{% endblock page_header %}
+
+{% block content %}
+
+    <!-- <p>Add a new Entry</p> -->
+    <form action="{% url 'learning_logs:new_entry' topic.id %}" method = "post">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <style>
+            #id_text 
+            {
+                padding: 15px; 
+            }
+        </style>
+        <input class="btn btn-primary" type="submit" value="Add Entry" name="submit">
+        <!-- <a class="btn btn-primary" href="{% url 'learning_logs:new_topic' %}">Add Entry</a> -->
+    </form>
+{% endblock content %}
